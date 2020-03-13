@@ -73,3 +73,13 @@ if flag_defaultsInitialized == True:
 
         # Save recordings and RIRs
         utils.saverecording(RIR, RIRtoSave, testStimulus.signal, recorded, args.fs)
+        # print(startId)
+        # print(endId)
+        # print(startIdToSave)
+        # RIRplot = RIR[startIdToSave:endId]
+        # print(RIR[0:10])
+        # # print(len(RIR[0]))
+        # print(RIRplot[0:10])
+        # plt.plot(RIR)
+        plt.plot(RIRtoSave)
+        plt.show()
